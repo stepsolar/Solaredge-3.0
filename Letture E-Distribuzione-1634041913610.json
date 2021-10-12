@@ -1,0 +1,1448 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 61,
+  "links": [
+    {
+      "asDropdown": false,
+      "icon": "external link",
+      "includeVars": true,
+      "keepTime": true,
+      "tags": [
+        "live"
+      ],
+      "targetBlank": false,
+      "title": "Live",
+      "tooltip": "",
+      "type": "dashboards",
+      "url": ""
+    },
+    {
+      "asDropdown": false,
+      "icon": "external link",
+      "includeVars": true,
+      "keepTime": true,
+      "tags": [
+        "mese"
+      ],
+      "targetBlank": false,
+      "title": "Mese",
+      "tooltip": "",
+      "type": "dashboards",
+      "url": ""
+    },
+    {
+      "asDropdown": false,
+      "icon": "external link",
+      "includeVars": true,
+      "keepTime": true,
+      "tags": [
+        "anno"
+      ],
+      "targetBlank": false,
+      "title": "Anno",
+      "tooltip": "",
+      "type": "dashboards",
+      "url": ""
+    },
+    {
+      "asDropdown": false,
+      "icon": "cloud",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "PVoutput",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://pvoutput.org/intraday.jsp?id=93628&sid=82678"
+    }
+  ],
+  "panels": [
+    {
+      "datasource": "Enel",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 0,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "watt"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 18,
+        "x": 0,
+        "y": 0
+      },
+      "id": 8,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "F1",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "SSP",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT \"F1\" FROM \"SSP\" WHERE ((\"tipo\" = 'produzione' AND \"dataletture\" = '2021_09_01') - (\"tipo\" = 'produzione' AND \"dataletture\" = '2021_08_01')) AND $timeFilter",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "F1"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "tipo",
+              "operator": "=",
+              "value": "produzione"
+            },
+            {
+              "condition": "AND",
+              "key": "dataletture",
+              "operator": "=",
+              "value": "2021_09_01"
+            }
+          ]
+        },
+        {
+          "alias": "F2",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "SSP",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT \"F2\" FROM \"SSP\" WHERE ((\"tipo\" = 'produzione' AND \"dataletture\" = '2021_09_01') - (\"tipo\" = 'produzione' AND \"dataletture\" = '2021_08_01')) AND $timeFilter",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "F1"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "tipo",
+              "operator": "=",
+              "value": "produzione"
+            },
+            {
+              "condition": "AND",
+              "key": "dataletture",
+              "operator": "=",
+              "value": "2021_09_01"
+            }
+          ]
+        },
+        {
+          "alias": "F3",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "SSP",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT \"F3\" FROM \"SSP\" WHERE ((\"tipo\" = 'produzione' AND \"dataletture\" = '2021_09_01') - (\"tipo\" = 'produzione' AND \"dataletture\" = '2021_08_01')) AND $timeFilter",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "F1"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "tipo",
+              "operator": "=",
+              "value": "produzione"
+            },
+            {
+              "condition": "AND",
+              "key": "dataletture",
+              "operator": "=",
+              "value": "2021_09_01"
+            }
+          ]
+        }
+      ],
+      "timeFrom": "1y",
+      "timeShift": null,
+      "title": "Panel Title",
+      "transformations": [
+        {
+          "id": "concatenate",
+          "options": {}
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {},
+            "indexByName": {},
+            "renameByName": {
+              "F1 1": "F1 Pdz",
+              "F1 2": "F1 Prv",
+              "F1 3": "F1 Imm",
+              "F2 1": "F2 Pdz",
+              "F2 2": "F2 Prv",
+              "F2 3": "F2 Imm",
+              "F3 1": "F3 Pdz",
+              "F3 2": "F3 Prv",
+              "F3 3": "F3 Imm",
+              "Time": "Data"
+            }
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": "Enel",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "left",
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "kwatt"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Data"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 93
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1 Pdz"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 67
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2 Pdz"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 59
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3 Pdz"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 62
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1 Prv"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 63
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2 Prv"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 66
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3 Prv"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 86
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1 Imm"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 71
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2 Imm"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 67
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3 Imm"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 76
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1 Produzione"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 108
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2 Produzione"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 109
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3 Produzione"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 108
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1 Prelevato"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 97
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2 Prelevato"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 93
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3 Prelevato"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 97
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1 Immissione"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 111
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2 Immissione"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 116
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3 Immissione"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 113
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 24,
+        "x": 0,
+        "y": 6
+      },
+      "id": 2,
+      "options": {
+        "showHeader": true,
+        "sortBy": []
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Produzione",
+          "groupBy": [],
+          "measurement": "SSP",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT dataletture, F1, F2, F3 FROM \"SSP\" WHERE (\"tipo\" = 'produzione')",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "Produzione",
+          "resultFormat": "table",
+          "select": [
+            [
+              {
+                "params": [
+                  "F1"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "F2"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "F3"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "tipo",
+              "operator": "=",
+              "value": "produzione"
+            }
+          ]
+        },
+        {
+          "alias": "Produzione",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "SSP",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT dataletture, F1, F2, F3 FROM \"SSP\" WHERE (\"tipo\" = 'prelevato')",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "table",
+          "select": [
+            [
+              {
+                "params": [
+                  "F1"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "F2"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "F3"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "tipo",
+              "operator": "=",
+              "value": "produzione"
+            }
+          ]
+        },
+        {
+          "alias": "Produzione",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "SSP",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT dataletture, F1, F2, F3 FROM \"SSP\" WHERE (\"tipo\" = 'immessa')",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "B",
+          "resultFormat": "table",
+          "select": [
+            [
+              {
+                "params": [
+                  "F1"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "F2"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "F3"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "tipo",
+              "operator": "=",
+              "value": "produzione"
+            }
+          ]
+        }
+      ],
+      "timeFrom": "1y",
+      "timeShift": null,
+      "title": "Letture E-Distribuzione",
+      "transformations": [
+        {
+          "id": "concatenate",
+          "options": {}
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "Time": true
+            },
+            "indexByName": {},
+            "renameByName": {
+              "F1 1": "F1 Produzione",
+              "F1 2": "F1 Prelevato",
+              "F1 3": "F1 Immissione",
+              "F2 1": "F2 Produzione",
+              "F2 2": "F2 Prelevato",
+              "F2 3": "F2 Immissione",
+              "F3 1": "F3 Produzione",
+              "F3 2": "F3 Prelevato",
+              "F3 3": "F3 Immissione",
+              "Time": "",
+              "dataletture": "Data",
+              "dataletture 1": "Data",
+              "dataletture 2": "Data",
+              "dataletture 3": "Data"
+            }
+          }
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "datasource": "Enel",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "left",
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "kwatt"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Data"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 98
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1 Pdz"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 67
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2 Pdz"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 59
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3 Pdz"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 62
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1 Prv"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 63
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2 Prv"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 66
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3 Prv"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 55
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1 Imm"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 71
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2 Imm"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 67
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3 Imm"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 76
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 104
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 107
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 100
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Tipo"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 134
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 11,
+        "x": 0,
+        "y": 12
+      },
+      "id": 4,
+      "options": {
+        "showHeader": true,
+        "sortBy": [
+          {
+            "desc": false,
+            "displayName": "Tipo"
+          }
+        ]
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT dataletture, tipo, F1, F2, F3 from SSP",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "table",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": "1y",
+      "timeShift": null,
+      "title": "Letture E-Distribuzione",
+      "transformations": [
+        {
+          "id": "concatenate",
+          "options": {}
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "Time": true
+            },
+            "indexByName": {},
+            "renameByName": {
+              "F1 1": "F1 Pdz",
+              "F1 2": "F1 Prv",
+              "F1 3": "F1 Imm",
+              "F2 1": "F2 Pdz",
+              "F2 2": "F2 Prv",
+              "F2 3": "F2 Imm",
+              "F3 1": "F3 Pdz",
+              "F3 2": "F3 Prv",
+              "F3 3": "F3 Imm",
+              "Time": "Data",
+              "dataletture": "Data",
+              "tipo": "Tipo"
+            }
+          }
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "datasource": "Enel",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "left",
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "kwatt"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Data"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 98
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1 Pdz"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 67
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2 Pdz"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 59
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3 Pdz"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 62
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1 Prv"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 63
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2 Prv"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 66
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3 Prv"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 55
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1 Imm"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 71
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2 Imm"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 67
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3 Imm"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 76
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1 Produzione"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 108
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2 Produzione"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 108
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3 Produzione"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 107
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1 Prelievo"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 87
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2 Prelievo"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 88
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3 Prelievo"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 85
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F1 Immissione"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 108
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F2 Immissione"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 111
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "F3 Immissione"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 112
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 18,
+        "x": 0,
+        "y": 24
+      },
+      "id": 6,
+      "options": {
+        "showHeader": true,
+        "sortBy": []
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Produzione",
+          "groupBy": [],
+          "measurement": "SSP",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "queryType": "randomWalk",
+          "refId": "Produzione",
+          "resultFormat": "logs",
+          "select": [
+            [
+              {
+                "params": [
+                  "F1"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "F2"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "F3"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "tipo",
+              "operator": "=",
+              "value": "produzione"
+            }
+          ]
+        },
+        {
+          "alias": "Prelievo",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "SSP",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "queryType": "randomWalk",
+          "refId": "Prelievo",
+          "resultFormat": "logs",
+          "select": [
+            [
+              {
+                "params": [
+                  "F1"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "F2"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "F3"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "tipo",
+              "operator": "=",
+              "value": "prelevato"
+            }
+          ]
+        },
+        {
+          "alias": "Immessa",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "SSP",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "queryType": "randomWalk",
+          "refId": "Immessa",
+          "resultFormat": "logs",
+          "select": [
+            [
+              {
+                "params": [
+                  "F1"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "F2"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "F3"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "tipo",
+              "operator": "=",
+              "value": "immessa"
+            }
+          ]
+        }
+      ],
+      "timeFrom": "1y",
+      "timeShift": null,
+      "title": "Letture E-Distribuzione",
+      "transformations": [
+        {
+          "id": "concatenate",
+          "options": {}
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "Time": true
+            },
+            "indexByName": {},
+            "renameByName": {
+              "F1 1": "F1 Produzione",
+              "F1 2": "F1 Prelievo",
+              "F1 3": "F1 Immissione",
+              "F2 1": "F2 Produzione",
+              "F2 2": "F2 Prelievo",
+              "F2 3": "F2 Immissione",
+              "F3 1": "F3 Produzione",
+              "F3 2": "F3 Prelievo",
+              "F3 3": "F3 Immissione",
+              "Time": "Data"
+            }
+          }
+        }
+      ],
+      "type": "table"
+    }
+  ],
+  "schemaVersion": 27,
+  "style": "dark",
+  "tags": [
+    "E-Distribuzione"
+  ],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Letture E-Distribuzione",
+  "uid": "B8Yjtbkgk",
+  "version": 2
+}

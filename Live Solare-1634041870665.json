@@ -1,0 +1,4658 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 59,
+  "iteration": 1634041400089,
+  "links": [
+    {
+      "asDropdown": false,
+      "icon": "external link",
+      "includeVars": true,
+      "keepTime": true,
+      "tags": [
+        "mese"
+      ],
+      "targetBlank": false,
+      "title": "Mese",
+      "tooltip": "",
+      "type": "dashboards",
+      "url": ""
+    },
+    {
+      "asDropdown": false,
+      "icon": "external link",
+      "includeVars": true,
+      "keepTime": true,
+      "tags": [
+        "anno"
+      ],
+      "targetBlank": false,
+      "title": "Anno",
+      "tooltip": "",
+      "type": "dashboards",
+      "url": ""
+    },
+    {
+      "asDropdown": false,
+      "icon": "external link",
+      "includeVars": true,
+      "keepTime": true,
+      "tags": [
+        "E-Distribuzione"
+      ],
+      "targetBlank": false,
+      "title": "E-Distribuzione",
+      "tooltip": "",
+      "type": "dashboards",
+      "url": ""
+    },
+    {
+      "asDropdown": false,
+      "icon": "cloud",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "PVoutput",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://pvoutput.org/intraday.jsp?id=93628&sid=82678"
+    }
+  ],
+  "panels": [
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": true,
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "datasource": "Solaranzeige",
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      },
+      "id": 26,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "$$hashKey": "object:2209",
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "$$hashKey": "object:2210",
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "Datum",
+          "groupBy": [],
+          "measurement": "Info",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Datum"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "thresholds": "",
+      "transparent": true,
+      "type": "singlestat",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "$$hashKey": "object:2212",
+          "op": "=",
+          "text": "Nachtmode",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 5,
+        "x": 6,
+        "y": 0
+      },
+      "id": 24,
+      "links": [],
+      "options": {
+        "content": "<center><font color=\"#C15C17\" size=6 >SolarEdge</font></center>",
+        "mode": "html"
+      },
+      "pluginVersion": "7.5.4",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": true,
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "datasource": "Solaranzeige",
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 3,
+        "x": 11,
+        "y": 0
+      },
+      "id": 22,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "Datum",
+          "groupBy": [],
+          "measurement": "Info",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Produkt"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "thresholds": "",
+      "transparent": true,
+      "type": "singlestat",
+      "valueFontSize": "30%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "Nachtmode",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "datasource": "Solaranzeige",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "decimals": 0,
+          "mappings": [
+            {
+              "id": 0,
+              "op": "=",
+              "text": "N/A",
+              "type": 1,
+              "value": "null"
+            },
+            {
+              "id": 1,
+              "op": "=",
+              "text": "Aus",
+              "type": 1,
+              "value": "1"
+            },
+            {
+              "id": 2,
+              "op": "=",
+              "text": "Modalità notturna (disattivata)",
+              "type": 1,
+              "value": "2"
+            },
+            {
+              "id": 3,
+              "op": "=",
+              "text": "Processo di avvio",
+              "type": 1,
+              "value": "3"
+            },
+            {
+              "id": 4,
+              "op": "=",
+              "text": "Produzione",
+              "type": 1,
+              "value": "4"
+            },
+            {
+              "id": 5,
+              "op": "=",
+              "text": "Limitato",
+              "type": 1,
+              "value": "5"
+            },
+            {
+              "id": 6,
+              "op": "=",
+              "text": "Spento",
+              "type": 1,
+              "value": "6"
+            },
+            {
+              "id": 7,
+              "op": "=",
+              "text": "Errore!",
+              "type": 1,
+              "value": "7"
+            },
+            {
+              "id": 8,
+              "op": "=",
+              "text": "Manutenzione",
+              "type": 1,
+              "value": "8"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "rgb(240, 237, 236)",
+                "value": null
+              },
+              {
+                "color": "dark-blue",
+                "value": 2
+              },
+              {
+                "color": "super-light-green",
+                "value": 3
+              },
+              {
+                "color": "rgb(7, 145, 145)",
+                "value": 4
+              },
+              {
+                "color": "dark-orange",
+                "value": 5
+              },
+              {
+                "color": "super-light-orange",
+                "value": 6
+              },
+              {
+                "color": "dark-red",
+                "value": 7
+              },
+              {
+                "color": "dark-purple",
+                "value": 8
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Efficienza"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percent"
+              },
+              {
+                "id": "decimals",
+                "value": 1
+              },
+              {
+                "id": "displayName"
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "percentage",
+                  "steps": [
+                    {
+                      "color": "dark-red",
+                      "value": null
+                    },
+                    {
+                      "color": "semi-dark-green",
+                      "value": 0
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 5,
+        "x": 14,
+        "y": 0
+      },
+      "id": 20,
+      "interval": null,
+      "links": [],
+      "maxDataPoints": 100,
+      "options": {
+        "colorMode": "background",
+        "fieldOptions": {
+          "calcs": [
+            "mean"
+          ]
+        },
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": ".",
+          "groupBy": [],
+          "measurement": "Service",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Status"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "Efficienza",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "AC",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT abs(\"Wirkungsgrad\") FROM \"AC\" WHERE $timeFilter",
+          "rawQuery": true,
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Wirkungsgrad"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              },
+              {
+                "params": [
+                  " *-1"
+                ],
+                "type": "math"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "transparent": true,
+      "type": "stat"
+    },
+    {
+      "cacheTimeout": null,
+      "datasource": "Solaranzeige",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 5,
+        "x": 19,
+        "y": 0
+      },
+      "id": 18,
+      "interval": null,
+      "links": [],
+      "maxDataPoints": 3,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Temperatura Inverter",
+          "groupBy": [],
+          "measurement": "Service",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperatur"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Temperatura Inverter",
+      "type": "stat"
+    },
+    {
+      "datasource": "SDM",
+      "fieldConfig": {
+        "defaults": {
+          "decimals": 2,
+          "links": [],
+          "mappings": [],
+          "max": 3500,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "semi-dark-red",
+                "value": null
+              },
+              {
+                "color": "orange",
+                "value": 500
+              },
+              {
+                "color": "yellow",
+                "value": 1000
+              }
+            ]
+          },
+          "unit": "watt"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 8,
+        "x": 0,
+        "y": 2
+      },
+      "id": 10,
+      "options": {
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true,
+        "text": {}
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "data",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT last(\"value\") FROM \"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Power') AND \"value\" >= 0 AND $timeFilter",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "device",
+              "operator": "=",
+              "value": "SDM1.1"
+            },
+            {
+              "condition": "AND",
+              "key": "type",
+              "operator": "=",
+              "value": "PowerL1"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Produzione Solare",
+      "type": "gauge"
+    },
+    {
+      "datasource": "SDM",
+      "fieldConfig": {
+        "defaults": {
+          "decimals": 2,
+          "displayName": "",
+          "links": [],
+          "mappings": [],
+          "max": 5000,
+          "min": -5000,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "dark-green",
+                "value": null
+              },
+              {
+                "color": "dark-red",
+                "value": 0
+              },
+              {
+                "color": "dark-red",
+                "value": 3000
+              }
+            ]
+          },
+          "unit": "watt"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 8,
+        "x": 8,
+        "y": 2
+      },
+      "id": 14,
+      "options": {
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true,
+        "text": {}
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "groupBy": [],
+          "measurement": "data",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT last(\"value\") FROM \"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Power') AND $timeFilter\n",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "device",
+              "operator": "=",
+              "value": "SDM1.2"
+            },
+            {
+              "condition": "AND",
+              "key": "type",
+              "operator": "=",
+              "value": "PowerL1"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Immissione - Prelievo",
+      "type": "gauge"
+    },
+    {
+      "datasource": "SDM",
+      "fieldConfig": {
+        "defaults": {
+          "decimals": 2,
+          "displayName": "",
+          "mappings": [
+            {
+              "from": "",
+              "id": 1,
+              "text": "",
+              "to": "",
+              "type": 1
+            }
+          ],
+          "max": 4800,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "orange",
+                "value": 1000
+              },
+              {
+                "color": "red",
+                "value": 2000
+              },
+              {
+                "color": "dark-red",
+                "value": 3000
+              }
+            ]
+          },
+          "unit": "watt"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 8,
+        "x": 16,
+        "y": 2
+      },
+      "id": 12,
+      "interval": "",
+      "options": {
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true,
+        "text": {}
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "sdm_1",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": true,
+          "measurement": "data",
+          "orderByTime": "ASC",
+          "policy": "autogen",
+          "query": "SELECT last(\"value\") FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Power') AND $timeFilter GROUP BY time($__interval) fill(previous)",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "device",
+              "operator": "=",
+              "value": "SDM1.1"
+            },
+            {
+              "condition": "AND",
+              "key": "type",
+              "operator": "=",
+              "value": "PowerL1"
+            }
+          ]
+        },
+        {
+          "alias": "sdm_2",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": true,
+          "measurement": "data",
+          "orderByTime": "ASC",
+          "policy": "autogen",
+          "query": "SELECT last(\"value\") FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Power') AND $timeFilter GROUP BY time($__interval) fill(previous)",
+          "rawQuery": true,
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "device",
+              "operator": "=",
+              "value": "SDM1.2"
+            },
+            {
+              "condition": "AND",
+              "key": "type",
+              "operator": "=",
+              "value": "PowerL1"
+            }
+          ]
+        },
+        {
+          "expression": "A['sdm_cs'] + ( B['sdm_fv'] > 0 ? B['sdm_fv'] : 0)",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "orderByTime": "ASC",
+          "outputMetricName": "consumo",
+          "periods": 7,
+          "policy": "default",
+          "query": "SELECT mean(\"sdm_1\") + mean(\"sdm_2\") as \"consumomax\"  FROM\n( \nSELECT last(\"value\") as \"sdm_1\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Power') AND \"value\" >= 0 AND $timeFilter GROUP BY time($__interval) fill(previous)\n), \n(\nSELECT last(\"value\") as \"sdm_2\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Power') AND $timeFilter GROUP BY time($__interval) fill(previous)\n)\nGROUP BY time($__interval) fill(null)",
+          "queryType": "Arithmetic",
+          "rawQuery": true,
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [],
+          "timeshiftUnit": "days"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Consumo",
+      "type": "gauge"
+    },
+    {
+      "datasource": "SDM",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 2,
+          "links": [],
+          "mappings": [],
+          "max": 3500,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-yellow",
+                "value": null
+              }
+            ]
+          },
+          "unit": "watth"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 8,
+        "x": 0,
+        "y": 9
+      },
+      "id": 67,
+      "interval": "0s",
+      "maxDataPoints": null,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "max"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "value_and_name"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Max Potenza Istantanea \"Produzione\"",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "data",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT mean(\"value\") FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Power') AND $timeFilter GROUP BY time($__interval) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "device",
+              "operator": "=",
+              "value": "SDM1.1"
+            },
+            {
+              "condition": "AND",
+              "key": "type",
+              "operator": "=",
+              "value": "PowerL1"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": "0d/d",
+      "type": "stat"
+    },
+    {
+      "datasource": "SDM",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 2,
+          "links": [],
+          "mappings": [],
+          "max": 3500,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-yellow",
+                "value": null
+              }
+            ]
+          },
+          "unit": "watth"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 8,
+        "x": 8,
+        "y": 9
+      },
+      "id": 68,
+      "interval": "0s",
+      "maxDataPoints": null,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "max"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "value_and_name"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Max Potenza Istantanea \"Immissione\"",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT mean(\"value\") * -1 FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Power') AND $timeFilter GROUP BY time($__interval) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": "0d/d",
+      "type": "stat"
+    },
+    {
+      "datasource": "SDM",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 2,
+          "links": [],
+          "mappings": [],
+          "max": 3500,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-yellow",
+                "value": null
+              }
+            ]
+          },
+          "unit": "watth"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 8,
+        "x": 16,
+        "y": 9
+      },
+      "id": 62,
+      "interval": "0s",
+      "maxDataPoints": null,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "max"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "value_and_name"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Max Potenza Istantanea \"Consumo\"",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT mean(\"prelievo_immissione\") + mean(\"Produzione_Solare\") as \"consumo\"  FROM\n( \nSELECT mean(\"value\") as  \"prelievo_immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Power') AND $timeFilter GROUP BY time($__interval) fill(previous)  tz('Europe/Rome')\n), \n(\nSELECT mean(\"value\") as \"Produzione_Solare\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Power')  AND $timeFilter  GROUP BY time($__interval) fill(previous) tz('Europe/Rome')\n)\nGROUP BY time($__interval) fill(null)",
+          "rawQuery": true,
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": "0d/d",
+      "type": "stat"
+    },
+    {
+      "datasource": "SDM",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "light-yellow",
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "super-light-green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "kwatth"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Autoconsumo di oggi"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "super-light-orange",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Consumo di oggi"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "super-light-red",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Prelievo di oggi"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "semi-dark-red",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Immissione"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "super-light-blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 24,
+        "x": 0,
+        "y": 11
+      },
+      "id": 44,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Produzione di oggi",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT difference(last(\"value\")) FROM \"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(24h) fill(previous) tz('Europe/Rome')",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "Produzione",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "Autoconsumo di oggi",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT mean(\"produzione\") - mean(\"immissione\") as \"autoconsumo\"  FROM\n( \nSELECT difference(last(\"value\")) as \"prelievo\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n), \n(\nSELECT difference(last(\"value\")) as \"immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n),\n(\nSELECT difference(last(\"value\")) as \"produzione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND \"value\" >= 0 AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n)\nGROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "Autoconsumo",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "Immissione",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT difference(last(\"value\")) as \"immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "Immissione",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "Consumo di oggi",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT mean(\"prelievo\") + mean(\"produzione\") - mean(\"immissione\") as \"consumo\"  FROM\n( \nSELECT difference(last(\"value\")) as \"prelievo\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n), \n(\nSELECT difference(last(\"value\")) as \"immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n),\n(\nSELECT difference(last(\"value\")) as \"produzione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND \"value\" >= 0 AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n)\nGROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "Consumo",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "Prelievo di oggi",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT difference(last(\"value\")) FROM \"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(24h) fill(previous) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "Prelievo",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "type": "stat"
+    },
+    {
+      "datasource": "SDM",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "light-yellow",
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "super-light-green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Autoconsumo"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "super-light-orange",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Prelievo"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "semi-dark-red",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 7,
+        "x": 0,
+        "y": 14
+      },
+      "id": 60,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "value_and_name"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Autoconsumo",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": true,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT mean(\"produzione\") - mean(\"immissione\") as \"autoconsumo\"  FROM\n( \nSELECT difference(last(\"value\")) as \"prelievo\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n), \n(\nSELECT difference(last(\"value\")) as \"immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n),\n(\nSELECT difference(last(\"value\")) as \"produzione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n)\nGROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "Consumo",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": true,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT mean(\"prelievo\") + mean(\"produzione\") - mean(\"immissione\") as \"consumo\"  FROM\n( \nSELECT difference(last(\"value\")) as \"prelievo\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n), \n(\nSELECT difference(last(\"value\")) as \"immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n),\n(\nSELECT difference(last(\"value\")) as \"produzione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n)\nGROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "Prelievo",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": true,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT difference(last(\"value\")) FROM \"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(24h) fill(previous) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "P",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": "__expr__",
+          "expression": "$A / $C * 100",
+          "hide": false,
+          "refId": "Autoconsumo",
+          "type": "math"
+        },
+        {
+          "datasource": "__expr__",
+          "expression": "$P / $C * 100",
+          "hide": false,
+          "refId": "Prelievo",
+          "type": "math"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "% di Consumo di Oggi",
+      "type": "stat"
+    },
+    {
+      "datasource": "SDM",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "light-yellow",
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "super-light-green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Autoconsumo"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "super-light-orange",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Immissione"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "super-light-blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 7,
+        "x": 7,
+        "y": 14
+      },
+      "id": 63,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "value_and_name"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Autoconsumo",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": true,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT mean(\"produzione\") - mean(\"immissione\") as \"autoconsumo\"  FROM\n( \nSELECT difference(last(\"value\")) as \"prelievo\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n), \n(\nSELECT difference(last(\"value\")) as \"immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n),\n(\nSELECT difference(last(\"value\")) as \"produzione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n)\nGROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "Produzione",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": true,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT difference(last(\"value\")) FROM \"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(24h) fill(previous) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "Immissione",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": true,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT difference(last(\"value\")) as \"immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "P",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": "__expr__",
+          "expression": "$A / $C * 100",
+          "hide": false,
+          "refId": "Autoconsumo",
+          "type": "math"
+        },
+        {
+          "datasource": "__expr__",
+          "expression": "$P / $C * 100",
+          "hide": false,
+          "refId": "Immissione",
+          "type": "math"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "% Consumo di Produzione",
+      "type": "stat"
+    },
+    {
+      "datasource": "SDM",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "super-light-green",
+            "mode": "fixed"
+          },
+          "decimals": 2,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "super-light-green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "currencyEUR"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Spesa di oggi"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "semi-dark-red",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 10,
+        "x": 14,
+        "y": 14
+      },
+      "id": 37,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Risparmio di oggi",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT (mean(\"produzione\") - mean(\"immissione\")) * [[price]] as \"autoconsumo\"  FROM\n( \nSELECT difference(last(\"value\")) as \"prelievo\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n), \n(\nSELECT difference(last(\"value\")) as \"immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n),\n(\nSELECT difference(last(\"value\")) as \"produzione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n)\nGROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "Risparmio",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "Spesa di oggi",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT (difference(last(\"value\"))) * [[price]] FROM \"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(24h) fill(previous) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "Spesa",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "type": "stat"
+    },
+    {
+      "datasource": "Solaranzeige",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "watth"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 0,
+        "y": 17
+      },
+      "id": 75,
+      "options": {
+        "displayMode": "lcd",
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true,
+        "text": {}
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT integral(\"Leistung\",1h) from \"PV\" where time >= $Oggi",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "title": "Panel Title",
+      "type": "bargauge"
+    },
+    {
+      "cacheTimeout": null,
+      "datasource": "Solaranzeige",
+      "fieldConfig": {
+        "defaults": {
+          "decimals": 0,
+          "displayName": "PV",
+          "mappings": [],
+          "max": 480,
+          "min": 280,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "dark-red",
+                "value": null
+              },
+              {
+                "color": "dark-blue",
+                "value": 320
+              },
+              {
+                "color": "dark-red",
+                "value": 440
+              }
+            ]
+          },
+          "unit": "volt"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "amper"
+            },
+            "properties": [
+              {
+                "id": "min",
+                "value": 0
+              },
+              {
+                "id": "max",
+                "value": 15
+              },
+              {
+                "id": "unit",
+                "value": "amp"
+              },
+              {
+                "id": "decimals",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 6,
+        "x": 6,
+        "y": 17
+      },
+      "id": 48,
+      "interval": null,
+      "links": [],
+      "maxDataPoints": 100,
+      "options": {
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true,
+        "text": {}
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "groupBy": [],
+          "measurement": "PV",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Spannung"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "amper",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT \"Strom\" FROM \"PV\" WHERE $timeFilter",
+          "rawQuery": true,
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "transparent": true,
+      "type": "gauge"
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "-- Mixed --",
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 2,
+      "gridPos": {
+        "h": 13,
+        "w": 24,
+        "x": 0,
+        "y": 21
+      },
+      "hiddenSeries": false,
+      "id": 16,
+      "legend": {
+        "alignAsTable": false,
+        "avg": false,
+        "current": false,
+        "hideEmpty": false,
+        "hideZero": false,
+        "max": true,
+        "min": false,
+        "rightSide": false,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.4",
+      "pointradius": 0.5,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "$$hashKey": "object:2033",
+          "alias": "Immissione",
+          "bars": true,
+          "color": "#56A64B"
+        },
+        {
+          "$$hashKey": "object:2211",
+          "alias": "Consumo",
+          "bars": true,
+          "color": "#FF7383"
+        },
+        {
+          "$$hashKey": "object:393",
+          "alias": "Energia Solare",
+          "color": "#F2CC0C"
+        },
+        {
+          "$$hashKey": "object:3122",
+          "alias": "Sun altitude",
+          "color": "#FA6400",
+          "dashLength": 5,
+          "dashes": true,
+          "legend": false,
+          "lines": true,
+          "linewidth": 2,
+          "yaxis": 2
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "Immissione",
+          "datasource": "SDM",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "measurement": "data",
+          "orderByTime": "ASC",
+          "policy": "autogen",
+          "query": "SELECT mean(\"value\") * -1 FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Power') AND $timeFilter GROUP BY time($__interval) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "Immissione",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "device",
+              "operator": "=",
+              "value": "SDM1.1"
+            },
+            {
+              "condition": "AND",
+              "key": "type",
+              "operator": "=",
+              "value": "PowerL1"
+            }
+          ],
+          "tz": "Europe/Rome"
+        },
+        {
+          "alias": "Energia Solare",
+          "datasource": "SDM",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "measurement": "data",
+          "orderByTime": "ASC",
+          "policy": "autogen",
+          "query": "SELECT mean(\"value\") FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Power') AND $timeFilter GROUP BY time($__interval) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "Energia Solare",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "device",
+              "operator": "=",
+              "value": "SDM1.2"
+            },
+            {
+              "condition": "AND",
+              "key": "type",
+              "operator": "=",
+              "value": "PowerL1"
+            }
+          ],
+          "tz": "Europe/Rome"
+        },
+        {
+          "alias": "Consumo",
+          "datasource": "SDM",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT mean(\"prelievo_immissione\") + mean(\"Produzione_Solare\") as \"consumo\"  FROM\n( \nSELECT mean(\"value\") as  \"prelievo_immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Power') AND $timeFilter GROUP BY time($__interval) fill(previous)  tz('Europe/Rome')\n), \n(\nSELECT mean(\"value\") as \"Produzione_Solare\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Power')  AND $timeFilter  GROUP BY time($__interval) fill(previous) tz('Europe/Rome')\n)\nGROUP BY time($__interval) fill(null)",
+          "rawQuery": true,
+          "refId": "Consumo",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "consumo",
+          "datasource": "SDM",
+          "expression": "A['prelievo_immissione'] + B['solare']",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": true,
+          "orderByTime": "ASC",
+          "outputMetricName": "consumo",
+          "periods": 7,
+          "policy": "default",
+          "query": "SELECT mean(\"prelievo_immissione\") + mean(\"solare\") as \"consumo\"  FROM\n( \nSELECT mean(\"value\") as  \"prelievo_immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Power') AND $timeFilter GROUP BY time($__interval) fill(previous)  tz('Europe/Rome')\n), \n(\nSELECT mean(\"value\") as \"solare\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Power')  AND $timeFilter  GROUP BY time($__interval) fill(previous) tz('Europe/Rome')\n)\nGROUP BY time($__interval) fill(null)",
+          "queryType": "Arithmetic",
+          "rawQuery": true,
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [],
+          "timeshiftUnit": "days"
+        },
+        {
+          "datasource": "Sun and Moon",
+          "hide": false,
+          "refId": "A",
+          "target": "sun_altitude"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": "0d/d",
+      "title": "Immissione & Autoconsumo",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:416",
+          "format": "watth",
+          "label": "Potenza Media (W)",
+          "logBase": 1,
+          "max": null,
+          "min": "0",
+          "show": true
+        },
+        {
+          "$$hashKey": "object:417",
+          "format": "percent",
+          "label": "Altitudine Solare",
+          "logBase": 1,
+          "max": null,
+          "min": "0",
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {
+        "Moon altitude": "#447EBC",
+        "Sun altitude": "#CCA300"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "-- Mixed --",
+      "editable": true,
+      "error": false,
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "fill": 2,
+      "fillGradient": 0,
+      "grid": {},
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 34
+      },
+      "hiddenSeries": false,
+      "id": 2,
+      "isNew": true,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 2,
+      "links": [],
+      "nullPointMode": "connected",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.4",
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "$$hashKey": "object:2520",
+          "alias": "Sun altitude",
+          "color": "#FFEE52",
+          "dashLength": 5,
+          "dashes": true,
+          "fill": 0,
+          "fillGradient": 2,
+          "legend": false,
+          "linewidth": 1,
+          "yaxis": 2
+        },
+        {
+          "$$hashKey": "object:1062",
+          "alias": "Produzione Inverter",
+          "fill": 5,
+          "linewidth": 1
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "datasource": "Sun and Moon",
+          "refId": "A",
+          "target": "sun_altitude"
+        },
+        {
+          "datasource": "Sun and Moon",
+          "hide": true,
+          "refId": "B",
+          "target": "moon_altitude"
+        },
+        {
+          "datasource": "Sun and Moon",
+          "hide": true,
+          "refId": "C",
+          "target": "moon_illumination"
+        },
+        {
+          "alias": "Produzione Inverter",
+          "datasource": "Solaranzeige",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "AC",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT \"Leistung\" FROM \"AC\" WHERE $timeFilter",
+          "rawQuery": true,
+          "refId": "F",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Leistung"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": "0d/d",
+      "title": "Produzione di Oggi",
+      "tooltip": {
+        "msResolution": true,
+        "shared": true,
+        "sort": 0,
+        "value_type": "cumulative"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:526",
+          "format": "watth",
+          "label": "Potenza Media (W)",
+          "logBase": 1,
+          "max": null,
+          "min": 0,
+          "show": true
+        },
+        {
+          "$$hashKey": "object:527",
+          "format": "percent",
+          "label": "Altitudine Solare",
+          "logBase": 1,
+          "max": null,
+          "min": 0,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {
+        "Moon altitude": "#447EBC",
+        "Sun altitude": "#CCA300"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "-- Mixed --",
+      "editable": true,
+      "error": false,
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "fill": 2,
+      "fillGradient": 0,
+      "grid": {},
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 34
+      },
+      "hiddenSeries": false,
+      "id": 46,
+      "isNew": true,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 2,
+      "links": [],
+      "nullPointMode": "connected",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.4",
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "$$hashKey": "object:2520",
+          "alias": "Sun altitude",
+          "color": "#FFEE52",
+          "dashLength": 5,
+          "dashes": true,
+          "fill": 0,
+          "fillGradient": 2,
+          "legend": false,
+          "linewidth": 1,
+          "yaxis": 2
+        },
+        {
+          "$$hashKey": "object:1062",
+          "alias": "Produzione Inverter",
+          "fill": 5,
+          "linewidth": 1
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "datasource": "Sun and Moon",
+          "refId": "A",
+          "target": "sun_altitude"
+        },
+        {
+          "datasource": "Sun and Moon",
+          "hide": true,
+          "refId": "B",
+          "target": "moon_altitude"
+        },
+        {
+          "datasource": "Sun and Moon",
+          "hide": true,
+          "refId": "C",
+          "target": "moon_illumination"
+        },
+        {
+          "alias": "Produzione Inverter",
+          "datasource": "Solaranzeige",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "AC",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT \"Leistung\" FROM \"AC\" WHERE $timeFilter",
+          "rawQuery": true,
+          "refId": "F",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Leistung"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": "1d/d",
+      "title": "Produzione di Ieri",
+      "tooltip": {
+        "msResolution": true,
+        "shared": true,
+        "sort": 0,
+        "value_type": "cumulative"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:526",
+          "format": "watth",
+          "label": "Potenza Media (W)",
+          "logBase": 1,
+          "max": null,
+          "min": 0,
+          "show": true
+        },
+        {
+          "$$hashKey": "object:527",
+          "format": "percent",
+          "label": "Altitudine Solare",
+          "logBase": 1,
+          "max": null,
+          "min": 0,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "datasource": "SDM",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "super-light-orange",
+            "mode": "fixed"
+          },
+          "displayName": "Autoconsumo del mese",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "kwatt"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 8,
+        "x": 0,
+        "y": 43
+      },
+      "id": 53,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "sum"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Autoconsumo",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT mean(\"produzione\") - mean(\"immissione\") as \"autoconsumo\"  FROM\n( \nSELECT difference(last(\"value\")) as \"prelievo\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n), \n(\nSELECT difference(last(\"value\")) as \"immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n),\n(\nSELECT difference(last(\"value\")) as \"produzione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n)\nGROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "Consumo di oggi",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": "0M/M",
+      "type": "stat"
+    },
+    {
+      "datasource": "SDM",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "super-light-green",
+            "mode": "fixed"
+          },
+          "decimals": 2,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "super-light-green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "currencyEUR"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Spesa del mese"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "semi-dark-red",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 16,
+        "x": 8,
+        "y": 43
+      },
+      "id": 52,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "sum"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Risparmio del mese",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT (mean(\"produzione\") - mean(\"immissione\")) * [[price]] as \"autoconsumo\"  FROM\n( \nSELECT difference(last(\"value\")) as \"prelievo\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n), \n(\nSELECT difference(last(\"value\")) as \"immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n),\n(\nSELECT difference(last(\"value\")) as \"produzione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n)\nGROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "Risparmio",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "Spesa del mese",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT (difference(last(\"value\"))) * [[price]] FROM \"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(24h) fill(previous) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "Spesa",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": "0M/M",
+      "type": "stat"
+    },
+    {
+      "aliasColors": {},
+      "bars": true,
+      "cacheTimeout": null,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "-- Mixed --",
+      "decimals": 2,
+      "displayBarsSideBySide": true,
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "fill": 1,
+      "gridPos": {
+        "h": 10,
+        "w": 24,
+        "x": 0,
+        "y": 46
+      },
+      "hideTimeOverride": false,
+      "id": 6,
+      "interval": "1d",
+      "labelAlign": "center",
+      "legend": {
+        "alignAsTable": false,
+        "avg": false,
+        "current": false,
+        "hideEmpty": false,
+        "hideZero": false,
+        "max": false,
+        "min": false,
+        "rightSide": false,
+        "show": true,
+        "total": true,
+        "values": true
+      },
+      "lines": false,
+      "linewidth": 1,
+      "links": [],
+      "nullPointMode": "connected",
+      "percentage": false,
+      "pluginVersion": "7.5.4",
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "$$hashKey": "object:1419",
+          "alias": "Prelievo SDM",
+          "color": "#E02F44"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "Inverter",
+          "datasource": "Solaranzeige",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT ((integral(\"Verbrauch\")  / 3600) + (integral(\"Einspeisung\") / 3600) - (integral(\"Bezug\") / 3600)) / 1000 FROM \"AC\" WHERE $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "Produzione SDM",
+          "datasource": "SDM",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "measurement": "data",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT difference(last(\"value\")) FROM \"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(previous) tz('Europe/Rome')",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "Immissione",
+          "datasource": "SDM",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT difference(last(\"value\")) FROM \"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "G",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "autoconsumo",
+          "datasource": "SDM",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT mean(\"produzione\") - mean(\"immissione\") as \"autoconsumo\"  FROM\n( \nSELECT difference(last(\"value\")) as \"prelievo\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n), \n(\nSELECT difference(last(\"value\")) as \"immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n),\n(\nSELECT difference(last(\"value\")) as \"produzione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n)\nGROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "D",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "Consumo",
+          "datasource": "SDM",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT mean(\"prelievo\") + mean(\"produzione\") - mean(\"immissione\") as \"consumo\"  FROM\n( \nSELECT difference(last(\"value\")) as \"prelievo\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n), \n(\nSELECT difference(last(\"value\")) as \"immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n),\n(\nSELECT difference(last(\"value\")) as \"produzione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n)\nGROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "E",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "alias": "Prelievo SDM",
+          "datasource": "SDM",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT difference(last(\"value\")) FROM \"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "rawQuery": true,
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": "SDM",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": true,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT last(\"prod\")+last(\"imm\") as \"autoc\" FROM \n(\nSELECT last(\"power\") as \"prod\" FROM \"http\" WHERE (\"url\" = 'http://192.168.1.202/emeter/0') AND $timeFilter GROUP BY time($__interval) fill(previous)\n),\n(\nSELECT last(\"power\") as \"imm\" FROM \"http\" WHERE (\"url\" = 'http://192.168.1.202/emeter/1') AND (\"power\"<=0) AND $timeFilter GROUP BY time($__interval) fill(0)\n) \nGROUP BY time($__interval) fill(previous)\n",
+          "rawQuery": true,
+          "refId": "F",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeShift": "0d/w",
+      "title": "Produzione e Consumo Giornaliera - Settimanale",
+      "tooltip": {
+        "shared": false,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "corpglory-multibar-graph-panel",
+      "xaxis": {
+        "buckets": null,
+        "customDateFormat": "%d %b",
+        "customDateFormatShow": true,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:3754",
+          "decimals": null,
+          "format": "kwatth",
+          "label": "Energia (KWh)",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "$$hashKey": "object:3755",
+          "decimals": null,
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ]
+    },
+    {
+      "datasource": "SDM",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "light-yellow",
+            "mode": "fixed"
+          },
+          "displayName": "Produzione di oggi",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "kwatth"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 8,
+        "x": 0,
+        "y": 56
+      },
+      "id": 29,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Produzione di oggi",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT difference(last(\"value\")) FROM \"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(24h) fill(previous) tz('Europe/Rome')",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "Consumo di oggi",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "type": "stat"
+    },
+    {
+      "datasource": "SDM",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "light-red",
+            "mode": "fixed"
+          },
+          "displayName": "Prelievo di oggi",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "kwatth"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 8,
+        "x": 8,
+        "y": 56
+      },
+      "id": 28,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Prelievo di oggi",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT difference(last(\"value\")) FROM \"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(24h) fill(previous) tz('Europe/Rome')",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "Consumo di oggi",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "type": "stat"
+    },
+    {
+      "datasource": "SDM",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "light-red",
+            "mode": "fixed"
+          },
+          "decimals": 2,
+          "displayName": "Prelievo Totale",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "kwatt"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 8,
+        "x": 16,
+        "y": 56
+      },
+      "id": 34,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Prelievo Totale",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT last(\"value\") FROM \"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time($__interval) fill(previous) tz('Europe/Rome')",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "Consumo di oggi",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "type": "stat"
+    },
+    {
+      "datasource": "SDM",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "super-light-orange",
+            "mode": "fixed"
+          },
+          "displayName": "Autoconsumo di oggi",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "kwatt"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 8,
+        "x": 0,
+        "y": 58
+      },
+      "id": 30,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Autoconsumo",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT mean(\"produzione\") - mean(\"immissione\") as \"autoconsumo\"  FROM\n( \nSELECT difference(last(\"value\")) as \"prelievo\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n), \n(\nSELECT difference(last(\"value\")) as \"immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n),\n(\nSELECT difference(last(\"value\")) as \"produzione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n)\nGROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "Consumo di oggi",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "type": "stat"
+    },
+    {
+      "datasource": "SDM",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "light-red",
+            "mode": "fixed"
+          },
+          "displayName": "Consumo di oggi",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "kwatth"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 8,
+        "x": 8,
+        "y": 58
+      },
+      "id": 32,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Consumo di oggi",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT mean(\"prelievo\") + mean(\"produzione\") - mean(\"immissione\") as \"consumo\"  FROM\n( \nSELECT difference(last(\"value\")) as \"prelievo\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n), \n(\nSELECT difference(last(\"value\")) as \"immissione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n),\n(\nSELECT difference(last(\"value\")) as \"produzione\" FROM \"autogen\".\"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND $timeFilter GROUP BY time(1d) fill(null) tz('Europe/Rome')\n)\nGROUP BY time(1d) fill(null) tz('Europe/Rome')",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "Consumo di oggi",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "type": "stat"
+    },
+    {
+      "datasource": "SDM",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "super-light-green",
+            "mode": "fixed"
+          },
+          "decimals": 2,
+          "displayName": "Immissione Totale",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "kwatt"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 8,
+        "x": 16,
+        "y": 58
+      },
+      "id": 35,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Export Totale",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT last(\"value\") FROM \"data\" WHERE (\"device\" = 'SDM2301.2' AND \"type\" = 'Export') AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "Consumo di oggi",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "type": "stat"
+    },
+    {
+      "datasource": "Solaranzeige",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "light-purple",
+            "mode": "fixed"
+          },
+          "decimals": 2,
+          "displayName": "Emissione CO2 Evitate ",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "kg"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 8,
+        "x": 0,
+        "y": 60
+      },
+      "id": 59,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Produzione Totale Inverter",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": true,
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT (last(\"Wh_Gesamt\")) / 1000 FROM \"Summen\" WHERE $timeFilter",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "E",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": "__expr__",
+          "expression": "0.4 * $E",
+          "hide": false,
+          "refId": "A",
+          "type": "math"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "type": "stat"
+    },
+    {
+      "datasource": "Solaranzeige",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "light-yellow",
+            "mode": "fixed"
+          },
+          "decimals": 2,
+          "displayName": "Produzione Totale Inverter",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "kwatth"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 8,
+        "x": 8,
+        "y": 60
+      },
+      "id": 58,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Produzione Totale Inverter",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT (last(\"Wh_Gesamt\")) / 1000 FROM \"Summen\" WHERE $timeFilter",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "Consumo di oggi",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "type": "stat"
+    },
+    {
+      "datasource": "SDM",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "light-yellow",
+            "mode": "fixed"
+          },
+          "decimals": 2,
+          "displayName": "Produzione Totale",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "kwatth"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 8,
+        "x": 16,
+        "y": 60
+      },
+      "id": 56,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.5.4",
+      "targets": [
+        {
+          "alias": "Produzione di oggi",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT last(\"value\") FROM \"data\" WHERE (\"device\" = 'SDM2301.1' AND \"type\" = 'Import') AND $timeFilter GROUP BY time($__interval) fill(previous) tz('Europe/Rome')",
+          "queryType": "randomWalk",
+          "rawQuery": true,
+          "refId": "Consumo di oggi",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "type": "stat"
+    }
+  ],
+  "refresh": false,
+  "schemaVersion": 27,
+  "style": "dark",
+  "tags": [
+    "live"
+  ],
+  "templating": {
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "0.26",
+          "value": "0.26"
+        },
+        "description": "costo energia prelievo",
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": "€ / KWh",
+        "multi": false,
+        "name": "price",
+        "options": [
+          {
+            "selected": true,
+            "text": "0.26",
+            "value": "0.26"
+          }
+        ],
+        "query": "0.26",
+        "queryValue": "",
+        "skipUrlSync": false,
+        "type": "custom"
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "1633989600000000000",
+          "value": "1633989600000000000"
+        },
+        "datasource": "Solaranzeige",
+        "definition": "select last(Heute_TS) from Statistik",
+        "description": null,
+        "error": null,
+        "hide": 2,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "Oggi",
+        "options": [],
+        "query": "select last(Heute_TS) from Statistik",
+        "refresh": 2,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "1633903200000000000",
+          "value": "1633903200000000000"
+        },
+        "datasource": "Solaranzeige",
+        "definition": "select last(Gestern_TS) from Statistik",
+        "description": null,
+        "error": null,
+        "hide": 2,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "Ieri",
+        "options": [],
+        "query": "select last(Gestern_TS) from Statistik",
+        "refresh": 2,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "1633039200000000000",
+          "value": "1633039200000000000"
+        },
+        "datasource": "Solaranzeige",
+        "definition": "select last(DieserMonat_TS) from Statistik",
+        "description": null,
+        "error": null,
+        "hide": 2,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "QuestoMese",
+        "options": [],
+        "query": "select last(DieserMonat_TS) from Statistik",
+        "refresh": 2,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Live Solare",
+  "uid": "R0DNVyWgz",
+  "version": 3
+}
